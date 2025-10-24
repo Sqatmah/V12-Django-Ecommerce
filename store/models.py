@@ -8,6 +8,9 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name_plural = 'Categories'
 
 
 #Customers
@@ -29,7 +32,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
     description = models.CharField(max_length=255, default='', blank=True,null=True)
-    iamge = models.ImageField(upload_to='uploads/product/')
+    image = models.ImageField(upload_to='media/products/')
+
     
 
     def __str__(self):
