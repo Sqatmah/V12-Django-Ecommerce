@@ -1,0 +1,47 @@
+# =============================
+# Python & Django
+# =============================
+*.py linguist-language=Python
+**/__pycache__/** linguist-vendored
+**/*.pyc linguist-vendored
+
+# Django migrations
+*/migrations/* linguist-vendored
+
+# =============================
+# Virtual Environment
+# =============================
+venv/** linguist-vendored
+env/** linguist-vendored
+
+# =============================
+# Static files (CSS, JS, Vendor)
+# =============================
+static/css/bootstrap*.css linguist-vendored
+static/css/*.min.css linguist-vendored
+static/js/*.min.js linguist-vendored
+static/js/jquery*.js linguist-vendored
+static/libs/** linguist-vendored
+
+# Other static files (images, fonts) are vendored
+static/images/** linguist-vendored
+static/fonts/** linguist-vendored
+
+# =============================
+# Media files
+# =============================
+media/** linguist-vendored
+uploads/** linguist-vendored
+
+# =============================
+# Templates
+# =============================
+templates/** linguist-language=HTML
+
+# =============================
+# IDE and OS files
+# =============================
+.vscode/ linguist-vendored
+.idea/ linguist-vendored
+.DS_Store linguist-vendored
+Thumbs.db linguist-vendored
